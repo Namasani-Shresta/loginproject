@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<script>
+function table(){
+
+
+
+var num;
+var res=" ";
+num= document.getElementById("input").value;
+for(let i=1;i<=10;i++){
+res=res+"<p>"+num+" X "+i+" = "+num*i+"</p>";
+document.getElementById("result").innerHTML=res;
+}
+}
+
+
+
+</script>
+<body>
+<h1>Tables</h1>
+<input type="number" placeholder="Enter number" id="input"></input><br><br>
+
+
+
+<button type="button" onclick="table()">click me</button>
+<div id="result">
+</body>
+</html>
